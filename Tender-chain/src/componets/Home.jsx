@@ -13,7 +13,7 @@ function Home() {
                 </a>
 
                 <div className='flex justify-center items-center gap-8'>
-                    <button className='rounded-xl text-green-400 flex justify-center items-center gap-3 px-7 py-2 cursor-pointer transition-all duration-200 hover:text-neutral-900 font-semibold border-2 border-green-400 hover:bg-green-400'>
+                    <button onClick={() => navigate("/login")} className='rounded-xl text-green-400 flex justify-center items-center gap-3 px-7 py-2 cursor-pointer transition-all duration-200 hover:text-black font-semibold border-2 border-green-400 hover:bg-green-400'>
                         <svg xmlns="http://www.w3.org/2000/svg" 
                             fill="none" 
                             viewBox="0 0 24 24" 
@@ -24,9 +24,11 @@ function Home() {
                                 strokeLinejoin="round" 
                                 d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                             </svg>
-                        <p>Login</p>
+                        <p className='font-["Montserrat"] font-semibold'>Login</p>
                     </button>
-                    <button className='rounded-xl bg-green-400 text-neutral-900 px-7 py-2 cursor-pointer hover:bg-green-300 transition-all duration-200 font-semibold'>Register</button>
+                    <button onClick={() => navigate("/register")} className='rounded-xl bg-green-400 text-black px-7 py-2 cursor-pointer hover:bg-green-300 transition-all duration-200 font-semibold'>
+                        <p className='font-["Montserrat"] font-semibold'>Register</p>
+                        </button>
                 </div>
             </nav>
 
@@ -34,8 +36,8 @@ function Home() {
             <div className='flex flex-col justify-center items-center w-full h-full pt-20'>
                 <div className='bg-green-400 w-full flex flex-col justify-center items-center py-20 px-4'>
                     <div className='text-center'>
-                        <h1 className='text-6xl font-bold text-neutral-900 font-["Playfair_Display"] tracking-tight'>Tender on Chain <br /> Is The New Name</h1>
-                        <p className='text-neutral-800 mt-6 text-xl font-["Montserrat"] tracking-normal font-semibold'>Blockchain-powered decentralized tender system ensuring fair allocation,<br /> transparent processes, and complete accountability in government procurement.</p>
+                        <h1 className='text-6xl font-bold text-black font-["Playfair_Display"] tracking-tight'>Tender on Chain <br /> Is The New Name</h1>
+                        <p className='text-black mt-6 text-xl font-["Montserrat"] tracking-normal font-semibold'>Blockchain-powered decentralized tender system ensuring fair allocation,<br /> transparent processes, and complete accountability in government procurement.</p>
                     </div>
                 </div>
 
