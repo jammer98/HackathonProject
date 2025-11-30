@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router'
-import DatePicker from '../componets/DatePicker.jsx'
+import DatePicker from "../Components/DatePicker.jsx";
 
 const HEADER_STATS = [
   {
